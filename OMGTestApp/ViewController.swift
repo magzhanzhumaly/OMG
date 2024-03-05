@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         for _ in 0..<yCount {
             var row: [Int] = []
             
-            let xCount = Int.random(in: 3..<7)
+            let xCount = Int.random(in: 10..<50)
             for _ in 0..<xCount {
                 row.append(Int.random(in: 0..<100))
             }
