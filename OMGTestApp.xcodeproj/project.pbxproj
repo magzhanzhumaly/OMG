@@ -16,6 +16,10 @@
 		56A3F4DC2B96EC5500843AF1 /* OMGTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F4DB2B96EC5500843AF1 /* OMGTestAppTests.swift */; };
 		56A3F4E62B96EC5500843AF1 /* OMGTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F4E52B96EC5500843AF1 /* OMGTestAppUITests.swift */; };
 		56A3F4E82B96EC5500843AF1 /* OMGTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F4E72B96EC5500843AF1 /* OMGTestAppUITestsLaunchTests.swift */; };
+		56A3F4FD2B96F1A400843AF1 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F4FB2B96F1A400843AF1 /* MyCollectionViewCell.swift */; };
+		56A3F4FE2B96F1A400843AF1 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56A3F4FC2B96F1A400843AF1 /* MyCollectionViewCell.xib */; };
+		56A3F5012B96F1BE00843AF1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3F4FF2B96F1BE00843AF1 /* MyTableViewCell.swift */; };
+		56A3F5022B96F1BE00843AF1 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56A3F5002B96F1BE00843AF1 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		56A3F4E12B96EC5500843AF1 /* OMGTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMGTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A3F4E52B96EC5500843AF1 /* OMGTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGTestAppUITests.swift; sourceTree = "<group>"; };
 		56A3F4E72B96EC5500843AF1 /* OMGTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMGTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56A3F4FB2B96F1A400843AF1 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		56A3F4FC2B96F1A400843AF1 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		56A3F4FF2B96F1BE00843AF1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		56A3F5002B96F1BE00843AF1 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		56A3F4C32B96EC5400843AF1 /* OMGTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				56A3F4F62B96EF7000843AF1 /* Components */,
 				56A3F4C42B96EC5400843AF1 /* AppDelegate.swift */,
 				56A3F4C62B96EC5400843AF1 /* SceneDelegate.swift */,
 				56A3F4C82B96EC5400843AF1 /* ViewController.swift */,
@@ -125,6 +134,17 @@
 				56A3F4E72B96EC5500843AF1 /* OMGTestAppUITestsLaunchTests.swift */,
 			);
 			path = OMGTestAppUITests;
+			sourceTree = "<group>";
+		};
+		56A3F4F62B96EF7000843AF1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				56A3F4FB2B96F1A400843AF1 /* MyCollectionViewCell.swift */,
+				56A3F4FC2B96F1A400843AF1 /* MyCollectionViewCell.xib */,
+				56A3F4FF2B96F1BE00843AF1 /* MyTableViewCell.swift */,
+				56A3F5002B96F1BE00843AF1 /* MyTableViewCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A3F5022B96F1BE00843AF1 /* MyTableViewCell.xib in Resources */,
 				56A3F4D12B96EC5500843AF1 /* LaunchScreen.storyboard in Resources */,
 				56A3F4CE2B96EC5500843AF1 /* Assets.xcassets in Resources */,
+				56A3F4FE2B96F1A400843AF1 /* MyCollectionViewCell.xib in Resources */,
 				56A3F4CC2B96EC5400843AF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +282,8 @@
 			files = (
 				56A3F4C92B96EC5400843AF1 /* ViewController.swift in Sources */,
 				56A3F4C52B96EC5400843AF1 /* AppDelegate.swift in Sources */,
+				56A3F4FD2B96F1A400843AF1 /* MyCollectionViewCell.swift in Sources */,
+				56A3F5012B96F1BE00843AF1 /* MyTableViewCell.swift in Sources */,
 				56A3F4C72B96EC5400843AF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,8 +472,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,8 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
