@@ -29,6 +29,8 @@ class MyCollectionViewCell: UICollectionViewCell {
         backView.layer.borderWidth = 1
         backView.layer.borderColor = UIColor.lightGray.cgColor
         backView.layer.cornerRadius = 5
+        backView.backgroundColor = .white
+        label.textColor = .black
         
         longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
         contentView.addGestureRecognizer(longPressGesture)
